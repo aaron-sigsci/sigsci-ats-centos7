@@ -1,0 +1,13 @@
+DOCKERNAME?=ats-test-7
+
+build:
+	docker build -t $(DOCKERNAME) .
+
+build-no-cache:
+	docker build --no-cache -t $(DOCKERNAME) .
+
+run:
+	docker run -d \
+		-e SIGSCI_ACCESSKEYID="SETME" \
+		-e SIGSCI_SECRETACCESSKEY="SETME" \
+		-p 8081:8080 $(DOCKERNAME)
