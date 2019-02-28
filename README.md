@@ -90,7 +90,7 @@ anom_resp_size 4096
 anom_resp_time 100
 ```
 
-## Remap Configuration:
+## Remap Configuration (OPTIONAL, only needed to enable/disable for specific remap paths):
 
 Following is an example for the remap.config:
 
